@@ -4,17 +4,17 @@ Frontend of **airyty**, an Airbnb-inspired property rental platform. Built with 
 
 ## Tech Stack
 
-| Purpose | Library |
-|---|---|
-| Framework | Next.js 16 (App Router) |
-| Language | TypeScript 5 |
-| Styling | Tailwind CSS 4 + tw-animate-css |
-| UI Primitives | shadcn/ui + Radix UI 1.4.3 |
-| Icons | lucide-react |
+| Purpose          | Library                          |
+| ---------------- | -------------------------------- |
+| Framework        | Next.js 16 (App Router)          |
+| Language         | TypeScript 5                     |
+| Styling          | Tailwind CSS 4 + tw-animate-css  |
+| UI Primitives    | shadcn/ui + Radix UI 1.4.3       |
+| Icons            | lucide-react                     |
 | State management | Zustand 5 (persisted auth store) |
-| Forms | React Hook Form 7 + Zod 4 |
-| Class merging | clsx + tailwind-merge (`cn()`) |
-| Package manager | **bun** |
+| Forms            | React Hook Form 7 + Zod 4        |
+| Class merging    | clsx + tailwind-merge (`cn()`)   |
+| Package manager  | **bun**                          |
 
 ## Getting Started
 
@@ -25,9 +25,9 @@ bun install
 bun run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser.
+Open [https://airyty-frontend.vercel.app](https://airyty-frontend.vercel.app) in your browser.
 
-> The backend API must be running on `http://localhost:3000`. See `../backend/README.md`.
+> The backend API must be running on `https://airyty-frontend.vercel.app`. See `https://airyty-frontend.vercel.app`.
 
 ## Available Scripts
 
@@ -111,6 +111,6 @@ Components are aliased to `@/shared/components/ui`.
 
 ## Environment
 
-No `.env` file needed for the frontend. The API base URL is hardcoded to `http://localhost:3000/api` in `src/lib/api/client.ts`.
+No `.env` file needed for the frontend. The API base URL is hardcoded to `DOMAIN/api` in `src/lib/api/client.ts`.
 
 Cloudinary images are served via `res.cloudinary.com` (allowed in `next.config.ts`).
